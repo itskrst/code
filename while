@@ -1,0 +1,72 @@
+package first_javaFundamentals;
+
+import java.util.Scanner;
+
+public class whileStatements {
+
+	public static void main(String[] args) {
+		
+		// while loop
+		
+		/*
+		String[] names = {"Shia", "Gin", "Ethan", "Victoria", "Luna", "Cain", "Apollo"};
+		
+		int i = 0;
+		
+		while(i < names.length) {
+			System.out.println(names[i]);
+			i++;
+		
+		}
+		*/
+		
+		/*
+		int i = 0;
+		while(i < 5) {
+			System.out.println(i);
+			i++;
+			break;
+		}
+		*/
+		
+		//do-while
+		
+		/*
+		int i = 5;
+		
+		do {
+			
+			System.out.println(i);
+			i++;
+		}
+		
+		while (i < 5);
+		*/
+		
+		Scanner s = new Scanner(System.in);
+		
+		String[] names = {"Shia", "Gin", "Ethan", "Victoria", "Luna", "Cain", "Apollo"};
+		
+		System.out.print("Enter name to search: ");
+		String search = s.nextLine();
+		
+		
+		int i = 0;
+		
+		while(i < 5) {
+			if(names[i].equalsIgnoreCase(search)) {
+					System.out.println("We found " +  names[i] + "!");
+					break;
+		}
+			else {
+				System.out.println("Invalid input.");
+			}
+		i++;
+		
+		}
+
+	}
+	
+}
+
+
