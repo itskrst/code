@@ -1,0 +1,27 @@
+package first_javaFundamentals;
+
+import java.util.Scanner;
+
+public class ForEachLoop {
+
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+
+		String[] names = {"Shia", "Grey", "Ethan", "Victoria", "Luna", "Cain"};
+		
+		System.out.print("Enter name: ");
+		String input = s.nextLine();
+
+		for(String i : names) {
+			if(i.equalsIgnoreCase(input)) {
+				System.out.println("We found " + i);
+				break;
+			}
+			else {
+				System.out.println(i);
+			}
+		}
+	}
+
+}
