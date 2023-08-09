@@ -1,0 +1,41 @@
+package first_javaFundamentals;
+
+import java.util.Scanner;
+
+public class Arrays {
+
+	public static void main(String[] args) {
+
+
+		Scanner s = new Scanner(System.in);
+		
+		String employeeNames[] = new String[20];
+		// int evenNumbers[] = new int[10]; 
+		
+		System.out.print("Enter Employee Name: ");
+		employeeNames[0] = s.nextLine();
+		
+		System.out.println("Employee's Name: " + employeeNames[0]);
+		
+		
+		
+		/*
+		String studentNames[] = {"Victoria", "Santi", "Olivia", "Shia", "Grey"};
+
+		studentNames[0] = "Claudia";
+		System.out.println(studentNames[0]);
+		
+		int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		*/
+		
+		/*
+		System.out.print(String.valueOf (numbers[2]) + String.valueOf (numbers[4]));
+		*/
+		
+	
+
+
+		
+	}
+
+}
