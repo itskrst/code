@@ -1,0 +1,184 @@
+package first_javaFundamentals;
+
+import java.util.Scanner;
+
+public class conditionalStatements {
+
+	public static void main(String[] args) {
+
+		/*
+		Scanner s = new Scanner(System.in);
+		
+		
+		System.out.print("Enter age: ");
+		int age = s.nextInt();
+		
+		if (age >= 18) {
+			System.out.println("You have access!");
+		}
+		
+		else if (age >= 13) {
+			System.out.print("You need parent's consent.");
+		}
+		
+		else {
+			System.out.print("Access Denied.");
+		}
+		
+		*/
+		
+		
+		
+		
+		
+		
+		// score
+		
+		/*
+		        Scanner scanner = new Scanner(System.in);
+		        
+		        System.out.print("Enter your score: ");
+		        int score = scanner.nextInt();
+		        
+
+		        if (score >= 0 && score <= 100) {
+		            if (score >= 90) {
+		                System.out.println("Your grade is A");
+		                
+		            } else if (score >= 80) {
+		                System.out.println("Your grade is B");
+		                
+		            } else if (score >= 70) {
+		                System.out.println("Your grade is C");
+		                
+		            } else if (score >= 60) {
+		                System.out.println("Your grade is D");
+		                
+		            } else {
+		                System.out.println("Your grade is F");
+		                
+		            }
+		        } else {
+		            System.out.println("Invalid score. Please enter a score between 0 and 100.");
+		        }
+		    */
+
+		
+		
+		
+		
+		
+		/*
+
+		        Scanner scanner = new Scanner(System.in);
+		        
+		        System.out.print("Enter the length of side 1: ");
+		        int side1 = scanner.nextInt();
+		        
+		        System.out.print("Enter the length of side 2: ");
+		        int side2 = scanner.nextInt();
+		        
+		        System.out.print("Enter the length of side 3: ");
+		        int side3 = scanner.nextInt();
+
+		        
+		        
+		        if (side1 > 0 && side2 > 0 && side3 > 0) {
+		            if (side1 == side2 && side2 == side3) {
+		                System.out.println("Equilateral triangle");
+		            } 
+		            
+		            else if (side1 == side2 || side2 == side3 || side1 == side3) {
+		                System.out.println("Isosceles triangle");
+		            } 
+		            
+		            else {
+		                System.out.println("Scalene triangle");
+		            }
+		        } 
+		        
+		        else {
+		            System.out.println("Invalid side lengths. Please enter positive values.");
+		            
+		            
+		        }
+		    
+		*/
+		
+		
+		
+		
+		
+		
+		
+		/*
+		Scanner s = new Scanner(System.in);
+		
+		 System.out.print("Enter age: ");
+	        int age = s.nextInt();
+	        s.nextLine(); // Consume the newline character left in the buffer
+	        
+	        System.out.print("Press (T) if verified: ");
+	        String verificationInput = s.nextLine();
+	        char isVerified = verificationInput.charAt(0);
+		
+		if (age >= 18) {
+			
+			System.out.println("You have access!");
+			
+				if (isVerified == 'T' || isVerified == 't') {
+					System.out.println("You are qualified!");
+				}
+				
+				else {
+					System.out.print("You are not qualified.");
+				}	
+				
+		}
+		
+		else {
+			System.out.print("You need to be at least 18 years old.");
+		}
+		
+		*/
+		
+		
+		
+		
+		/*
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter greeting: ");
+		String greet = s.nextLine();
+		
+		if(greet.equalsIgnoreCase("Hello")) {
+			System.out.println("Hi!");
+		}
+		
+		else System.out.print("What");
+		
+		*/
+		
+		
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("Do you have a ruler?");
+		System.out.print("Enter: ");
+		String hasRuler = s.nextLine();
+		
+		System.out.println("Do you have a pen?");
+		System.out.print("Enter: ");
+		String hasBallpen = s.nextLine();
+		
+		if (hasRuler.equalsIgnoreCase("yes") || hasBallpen.equalsIgnoreCase("yes")) {
+			System.out.print("Come In!");
+		}
+		
+		else {
+			System.out.print("Go home");
+		}
+		
+
+	}
+
+}
