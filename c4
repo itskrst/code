@@ -1,0 +1,44 @@
+ package first_javaFundamentals;
+ 
+ import java.util.Scanner;
+
+public class challenge4 {
+
+	public static void main(String[] args) {
+
+		
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter first grade: ");
+		float firstGrade = s.nextFloat();
+		
+		System.out.print("Enter second grade: ");
+		float secondGrade = s.nextFloat();
+		
+		System.out.print("Enter third grade: ");
+		float thirdGrade = s.nextFloat();
+		
+		System.out.print("Enter fourth grade: ");
+		float fourthGrade = s.nextFloat();
+		
+		float result = 0;
+		
+		result = (firstGrade + secondGrade + thirdGrade + fourthGrade) / 4;
+		System.out.println("Average: " + result);
+		
+		
+		if (result > 100) System.out.print("Invalid Grade.");
+		else if (result >= 98) System.out.print("With Highest Honors!");
+		else if (result >= 95) System.out.print("With High Honors!");
+		else if (result >= 90) System.out.print("With Honors!");
+		else if (result >= 75) System.out.print("Passed!");
+		else System.out.print("Failed.");
+		
+			
+		
+		
+
+		
+	}
+
+}
