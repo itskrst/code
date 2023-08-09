@@ -1,0 +1,57 @@
+package first_javaFundamentals;
+
+import java.util.Scanner;
+
+public class challenge7 {
+
+	public static void main(String[] args) {
+
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("Enter username: ");
+		String user = s.nextLine();
+		
+		System.out.println("Enter password: ");
+		String pass = s.nextLine();
+		
+		String[] users = {"num1", "num2", "num3"};
+		
+		String[] passes  = {"wew", "weh", "wah"};
+		
+		boolean usernameFound = false;
+		
+		for(int i = 0; i < users.length; i++) {
+			if(users[i].equalsIgnoreCase(user)) {
+				System.out.println("Username: " + users[i]);
+				usernameFound = true;
+				break;
+			}
+			if(!usernameFound) {
+				System.out.print("Account not found.");
+				s.close();
+				System.exit(0);
+
+			}
+		}
+		
+        boolean passwordMatched = false;
+		
+		for(int x = 0; x < passes.length; x++) {
+			if(passes[x].equalsIgnoreCase(pass)) {
+				System.out.println("Password: " + passes[x]);
+				passwordMatched = true;
+				break;
+			}
+			if(!passwordMatched){
+				System.out.print("Account not found.");
+				s.close();
+				System.exit(0);
+
+			}
+		}
+		
+		s.close();
+
+	}
+
+}
