@@ -1,0 +1,70 @@
+package first_javaFundamentals;
+
+import java.util.Scanner;
+
+public class challenge2 {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Enter first number: ");
+		double num1 = scan.nextDouble();
+		
+		System.out.print("Enter first number: ");
+		double num2 = scan.nextDouble();
+		
+		System.out.println("Choose the operation:");
+        System.out.println("1. Addition (+)");
+        System.out.println("2. Subtraction (-)");
+        System.out.println("3. Multiplication (*)");
+        System.out.println("4. Division (/)");
+        System.out.print("Enter the choice (1/2/3/4): ");
+        
+        int choice = scan.nextInt();
+        
+		double result = 0;
+		char operator = ' '; 
+
+		switch (choice) {
+		    case 1:
+		       result = num1 + num2;
+		       operator = '+';
+		        break;
+		        
+		    case 2:
+		        result = num1 - num2;
+			    operator = '-';
+		        break;
+		        
+		    case 3:
+		        result = num1 * num2;
+			    operator = '*';
+		        break;
+		        
+		    case 4:
+	                if (num2 != 0) {
+	                    result = num1 / num2;
+	                    operator = '/';
+	                    
+	                } else {
+	                    System.out.println("Error: Division by zero is not allowed.");
+	                    return;
+	                }
+	                break;
+	                
+	        default:
+	                System.out.println("Invalid choice!");
+	                return;
+	        }
+          
+
+		System.out.println("Solution: " + num1 + " " + operator + " " + num2) ;
+		System.out.print("Answer: " + result) ;
+
+
+		
+	}
+
+}
