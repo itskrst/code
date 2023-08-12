@@ -1,0 +1,61 @@
+package first_javaFundamentals;
+
+public class twoD_Array {
+
+	public static void main(String[] args) {
+
+		/*
+		
+		String users[][] =  {
+				{"Shia", "shia123"},
+				{"Gin", "Gin123"},
+				{"Ethan", "Ethan123"},
+				{"Victoria", "Victoria123"}
+		};
+		
+		
+	//	int num[][] = new int[4][3];
+		
+		
+		for(int a = 0; a < users.length; a++) {
+			for(int b = 0; b < users[a].length; b++) {
+				System.out.println(users[a][b] + " ");
+			}
+			System.out.println();
+		}
+		*/
+		
+		
+		
+		for(int i = 0; i < 5; i++) {
+			for(int x = 0; x < 5; x++) {
+				System.out.println(i + " : " + x);
+			}
+			System.out.println();
+		}
+		
+		/*
+		 String users[][] =  {
+				{"Shia", "shia123"},
+				{"Gin", "Gin123"},
+				{"Ethan", "Ethan123"},
+				{"Victoria", "Victoria123", "0"}
+		};
+		
+				
+		
+		for(int row = 0; row < users.length; row++) {
+			for(int col = 0; col < users[row].length; col++) {
+				System.out.println(row + " " + col);
+			}
+			System.out.println();
+		
+		
+		}
+		*/
+		
+		
+	}
+
+}
+
