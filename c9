@@ -1,0 +1,27 @@
+package first_javaFundamentals;
+
+public class challenge9 {
+	
+	//Create a program that has a method named summation. It needs to accept an array of integers then return the sum of the given array.
+	//PS: Display the sum outside of the method.
+			
+	static int[] num = {90, 54, 34, 78};
+
+
+	public static void main(String[] args) {
+		
+		int result = summation(num);
+		
+		System.out.println("Sum of the array is: " + result);
+		
+	}
+
+	static int summation(int[] numbers) {
+		int sum = 0;
+		for(int x = 0; x < numbers.length; x++) {
+			sum += numbers[x];
+		}
+		return sum;
+	}
+	
+}
