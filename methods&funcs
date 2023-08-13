@@ -1,0 +1,121 @@
+package first_javaFundamentals;
+
+public class Methods_Functions {
+
+	/*
+	// Global Variables
+	static String section = "A";
+	static int num = 100;
+	
+	
+	
+	public static void main(String[] args) {
+  
+		showSection();
+		showNum();
+		
+	}
+	
+	
+	static void showSection() {
+		System.out.println(section);
+	}
+	
+	static void showNum() {
+		System.out.println(num);
+	}
+	*/
+	
+	
+	/*
+	public static void main(String[] args) {
+		
+		print("Hello");
+		add(100, 90);
+		
+	}
+	
+	static void add(int num1, int num2) {
+		System.out.println(num1 + num2);
+	}
+	
+	static void print(String word) {
+		System.out.println(word);
+	}
+	*/
+	
+
+	
+	/*
+	public static void main(String[] arg) {
+		
+		greet("Hailey", 19);
+		
+	}
+	
+	static void greet(String name, int age) {
+		print("Hello! Your name is " + name + ".");
+		print("You are " + age + " years old.");
+		
+	}
+	
+	static void print(String word) {
+		System.out.println(word);
+	}
+	*/
+	
+	/*
+	public static void main(String[] args) {
+		int sum = add(70, 80);
+		System.out.println(sum);
+		
+	}
+	
+	static int add(int num1, int num2) {
+		return num1 + num2;
+	}
+	*/
+	
+	
+	/*
+	public static void main(String[] args) {
+		System.out.println(isLegalAge(19));
+		
+	}
+	
+	static boolean isLegalAge(int age) {
+		if(age >= 18) return true;
+		else return false;
+	}
+	*/
+	
+	
+	public static void main(String[] args) {
+		
+		System.out.println(add(5,2));
+		System.out.println(add(6, 9, 7));
+		System.out.print(add(6.78, 5.93));
+	}
+	
+	static int add(int num1, int num2) {
+		return num1 + num2;
+	}
+	
+	static  int add(int num1, int num2, int num3) {
+		return num1 + num2 + num3;
+	}
+	
+	static double add(double num1, double num2) {
+		return num1 + num2;
+	}
+	
+
+	
+	
+	
+}
+
+
+
+
+
